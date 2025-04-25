@@ -5,3 +5,35 @@
   text-decoration: none;
   list-style: none;
 }
+body{
+overflow-x: hidden;
+font-family: 'Inter', sans-serif;
+}
+
+.top-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+margin-top: 40px;
+}
+
+.imgs-header{
+display: flex;
+align-items: center;
+justify-content: left;
+gap: 16px;
+margin-left: 30px;
+}
+
+
+.img-header-insta{
+width: 32px;
+height: 32px;
+}	
+
+.img-header-face{
+  width: 32px;
+  height: 32px;
+  }	
