@@ -13,7 +13,8 @@ background-color: #06121E;
 }
 
 :root{
-  --font-family: 'Inter', sans-serif;
+  --font-family-1: 'Inter', sans-serif;
+  --font-family-2: 'B612', sans-serif;
   --color-text-main: #FFFFFF;
 }
 
@@ -97,6 +98,7 @@ transition: all 0.3s ease-in-out;
   
   font-size: 25px;
   font-weight: 700;
+  font-family: var(--font-family-2);
 
   margin: 50px;
   color: var(--color-text-main);
@@ -123,6 +125,8 @@ transition: all 0.3s ease-in-out;
   margin: 80px;
 
   border-top: 2px solid var(--color-text-main);
+
+  margin-bottom: 5rem;
 }
 
 .img-about img{
@@ -156,7 +160,7 @@ transition: all 0.3s ease-in-out;
   font-weight: 700;
   line-height: 150%;
 
-  font-family: var(--font-family);
+  font-family: var(--font-family-2);
 }
 
 .text-about p{
@@ -165,14 +169,20 @@ transition: all 0.3s ease-in-out;
   font-weight: 400;
   line-height: 150%;
 
-  font-family: var(--font-family);
+  font-family: var(--font-family-2);
 }
 
 /* SERVICES */
+.line{
+  border-top: 2px solid var(--color-text-main);
+}
+
 .services{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5rem;
+
 }
 
 .services-title{
@@ -180,8 +190,53 @@ transition: all 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+
+
+  color: var(--color-text-main);
+
+  margin: 25px;
+  gap: 10px;
+}
+
+.services-title h2{
+  font-size: 30px;
+  font-weight: 700;
+
+  font-family: var(--font-family-2);
+}
+
+.services-title h3{
+  font-family: var(--font-family-2);
+  font-weight: 500;
 }
 
 .services-img img{
-  width: 200px;
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.services-img{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  gap: 35px;
+  cursor: pointer;
+}
+
+
+.services-img img:hover{
+  transform: scale(1.05);
+}
+
+/* CONTACT */
+
+.contact{
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
