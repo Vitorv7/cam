@@ -112,25 +112,19 @@ transition: all 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 50px;
-
-  border-top: 2px solid white;
-  padding-top: 50px;
+  margin: 60px;
 }
 
-.about-img img{
-  width: 415px;
-  height: 300px;
-}	
+.about img{
+  width: 450px;
+  height: 450px;
+}
 
-.about-img{
+.text-about{
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: row;
-}
+  justify-content: center;
+  flex-direction: column;
 
-.title-subtitle{
-  color: white;
-  margin: 40px;
+  gap: 30px;
 }
