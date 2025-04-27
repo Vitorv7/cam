@@ -12,10 +12,14 @@ font-family: 'Inter', sans-serif;
 background-color: #06121E;
 }
 
+:root{
+  --font-family: 'Inter', sans-serif;
+  --color-text-main: #FFFFFF;
+}
 
 /* HTML HEADER */
 .title-header{
-  color: white;
+  color: var(--color-text-main);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -61,11 +65,14 @@ transition: all 0.3s ease-in-out;
 .img-header-face:hover{
   transform: translateY(-5px);
   scale: 1.1;
+  transform: initial;
+
 } 
 
 .img-header-insta:hover{
   transform: translateY(-5px);
   scale: 1.1;
+  transform: initial;
 } 
 
 /* SECTION 1 */
@@ -75,7 +82,7 @@ transition: all 0.3s ease-in-out;
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 90px;
+  margin-bottom: 10rem;
 }
 
 .title-section{
@@ -87,18 +94,19 @@ transition: all 0.3s ease-in-out;
   align-items: center;
   text-align: center;
 
-  color: white;
-  font-size: 30px;
+  
+  font-size: 25px;
   font-weight: 700;
 
   margin: 50px;
+  color: var(--color-text-main);
 }
 
 .button-section a{
-  color: white;
+  color: var(--color-text-main);
   background-color: #0066FF;
   padding: 20px;
-  border: 1px solid white;
+  border: 1px solid var(--color-text-main);
   border-radius: 5px;
 
   font-size: 16px;
@@ -112,12 +120,23 @@ transition: all 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
 
-  margin: 60px;
+  margin: 80px;
+
+  border-top: 2px solid var(--color-text-main);
 }
 
-.about img{
-  width: 450px;
-  height: 450px;
+.img-about img{
+  width: 70%;
+  height: auto;
+
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-about img:hover{
+  transform: scale(1.05);
 }
 
 .text-about{
@@ -126,5 +145,27 @@ transition: all 0.3s ease-in-out;
   justify-content: center;
   flex-direction: column;
 
-  gap: 30px;
+  text-align: center;
+
+  gap: 20px;
 }
+
+.text-about h2{
+  color: var(--color-text-main);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150%;
+
+  font-family: var(--font-family);
+}
+
+.text-about p{
+  color: var(--color-text-main);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+
+  font-family: var(--font-family);
+}
+
+/* SERVICES */
