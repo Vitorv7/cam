@@ -169,3 +169,19 @@ transition: all 0.3s ease-in-out;
 }
 
 /* SERVICES */
+.services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services-img img{
+  width: 200px;
+}
