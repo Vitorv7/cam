@@ -240,3 +240,29 @@ transition: all 0.3s ease-in-out;
   align-content: center;
   justify-content: center;
 }
+
+.bg_home{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+}
+
+.bg_home img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg_home::after{
+  content: '';
+
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  inset: 0;
+  opacity: 0.5;
+  background: linear-gradient(-233deg, #000 100%, rgba(0, 0, 0, 0) 65%) ;
+}
