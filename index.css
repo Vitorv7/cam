@@ -119,9 +119,11 @@ body {
   width: 70%;
   height: auto;
   margin-top: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  border: 1px solid var(--color-text-main);
 }
 
 .img-about img:hover {
@@ -238,7 +240,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #06121E;
+  /* background-color: #06121E; */
   padding: 25px;
   border-top: 2px solid var(--color-text-main);
 }
@@ -257,8 +259,11 @@ body {
 
 .logo-subtitle img {
   width: 320px;
-  height: 290px;
-  border-radius: 5px;
+  height: 315px;
+  border-radius: 10px;
+
+  border: 1px solid var(--color-text-main);
+
 }
 
 .logo-subtitle h2 {
@@ -273,4 +278,18 @@ body {
   transform: translateY(-5px);
   scale: 1.1;
   transition: all 0.3s ease-in-out;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 769px){
+  .top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  border-bottom: none;
+  }
+
+  .title-section h2{
+    width: 90px;
+  }
 }
