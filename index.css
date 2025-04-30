@@ -109,7 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 80px 0 5rem;
+  margin: 80px;
   border-top: 2px solid var(--color-text-main);
 
   margin: 80px;
