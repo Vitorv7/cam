@@ -269,10 +269,6 @@ body {
   font-weight: 400;
 }
 
-.insta_new img{
-  background-color: white;
-}
-
 .incons img:hover {
   transform: translateY(-5px);
   scale: 1.1;
