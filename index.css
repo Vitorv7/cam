@@ -69,7 +69,7 @@ body {
   margin-bottom: 10rem;
 }
 
-.title-section {
+.first-section h2 {
   width: 850px;
   height: 150px;
   display: flex;
@@ -289,7 +289,12 @@ body {
   border-bottom: none;
   }
 
-  .title-section h2{
-    width: 90px;
+  .first-section h2{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-align: center;
+
   }
+
 }
