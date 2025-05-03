@@ -280,21 +280,22 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+
+
 /* RESPONSIVIDADE */
 @media screen and (max-width: 769px){
   .top-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  border-bottom: none;
+    width: 140%;
+    border-bottom: none;
+
+    margin-bottom: -10px;
   }
 
-  .first-section h2{
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
-    text-align: center;
-
+  .title-section h2{
+    width: 120%;
+    font-size: 22px;
   }
+
+
 
 }
