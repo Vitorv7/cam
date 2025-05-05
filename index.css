@@ -70,8 +70,6 @@ body {
 }
 
 .first-section h2 {
-  width: 850px;
-  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +77,7 @@ body {
 
   margin: 50px;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: var(--font-family);
   color: var(--color-text-main);
 }
@@ -173,12 +171,12 @@ body {
 
 .services-title h2 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: var(--font-family);
 }
 
 .services-title h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-family: var(--font-family);
 }
 
@@ -220,7 +218,6 @@ body {
 .main-image img {
   width: 100%;
   max-width: 300px;
-  /* ou outro valor como 400px, 300px */
   height: auto;
   border-radius: 10px;
   transition: opacity 0.4s ease-in-out;
@@ -261,73 +258,49 @@ body {
 /* ================= CONTATO E RODAPÉ ================= */
 .footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   /* background-color: #06121E; */
   padding: 25px;
   border-top: 2px solid var(--color-text-main);
 }
 
-.incons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin: 10px;
-}
-
-.logo-subtitle {
-  color: var(--color-text-main);
-}
-
-.logo-subtitle img {
-  width: 320px;
-  height: 315px;
+.footer img{
+  width: 200px;
+  height: 194px;
   border-radius: 10px;
 
   border: 1px solid var(--color-text-main);
-
 }
-
-.logo-subtitle h2 {
-  font-family: var(--font-family);
-  color: var(--color-text-main);
-
-  font-size: 30px;
-  font-weight: 400;
-}
-
-.incons img:hover {
-  transform: translateY(-5px);
-  scale: 1.1;
-  transition: all 0.3s ease-in-out;
-}
-
 
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 769px) {
-  .top-header {
-    border: none;
-    position: relative;
+@media screen and (max-width: 769px){
+.line{
+  border-top: none;
+}
+
+.top-header {
+  border: none;
+  position: relative;
   }
 
-  .title-section h2 {
-    font-size: 18px;
-    width: 18rem;
-  }
+.title-section h2 {
+  font-size: 18px;
+  width: 18rem;
+}
 
-  .about{
-    border-top: none;
+.about{
+  border-top: none;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .img-about img {
+.img-about img {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,8 +308,18 @@ body {
   width: 80%;
   margin-left: 9%;
   margin-top: -25px;
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
+
+.text-about p{
+  font-size: 20px;
+  width: 140%;
+}
+
+
+}
+
+
 
 @media (max-width: 600px){
   .main-image img{
@@ -352,4 +335,4 @@ margin-bottom: 2rem;
     width: 70px;
     height: 45px;
   }
-}}
+}
