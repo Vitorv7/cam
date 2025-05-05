@@ -206,7 +206,6 @@ body {
 
 .services-img img:hover {
   transform: scale(1.05);
-  box-shadow: 10px 15px 0 var(--color-text-main);
 }
 
 /* ================= BACKGROUND ================= */
@@ -233,6 +232,55 @@ body {
   opacity: 0.5;
   background: linear-gradient(-233deg, #000 100%, rgba(0, 0, 0, 0) 65%);
 }
+
+/* CARROUSEL */
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 300px; /* ou outro valor como 400px, 300px */
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 0.4s ease-in-out;
+  margin: 0 auto;
+  display: block;
+}
+
+.thumbnails {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnails .thumb {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.thumbnails .thumb:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.thumbnails .thumb.active {
+  border: 2px solid #007bff;
+  opacity: 1;
+}
+
+
 
 /* ================= CONTATO E RODAPÉ ================= */
 .footer {
@@ -296,6 +344,21 @@ body {
     font-size: 22px;
   }
 
-
-
 }
+
+@media (max-width: 600px) {
+  .main-image img {
+    max-width: 90%; /* ocupa quase toda a largura da tela */
+  }
+
+  .thumbnails {
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .thumbnails .thumb {
+    width: 70px;
+    height: 45px;
+  }
+}
+
