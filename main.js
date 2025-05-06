@@ -12,6 +12,7 @@ thumbnails.forEach(thumb => {
   })
 })
 
+// ScrollReveal
 window.sr = ScrollReveal({ reset: true })
 
 ScrollReveal().reveal('.top-header', {

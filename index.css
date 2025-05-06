@@ -316,6 +316,7 @@ body {
   width: 140%;
 }
 
+/* scrollreveal mobile */
 .top-header, .footer, .services-wrapper, .about, .first-section {
   visibility: hidden;
 }
@@ -339,13 +340,14 @@ body {
     height: 45px;
   }
 
+  /* Scrollreveal mobile */
   .top-header, .footer, .services-wrapper, .about, .first-section {
     visibility: hidden;
   }
 }
 
 
-
+/* Scrollreveal desktop */
 .top-header, .footer, .services-wrapper, .about, .first-section {
   visibility: hidden;
 }
