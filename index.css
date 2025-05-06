@@ -316,6 +316,9 @@ body {
   width: 140%;
 }
 
+.top-header, .footer, .services-wrapper, .about, .first-section {
+  visibility: hidden;
+}
 
 }
 
@@ -334,6 +337,10 @@ body {
   .thumbnails .thumb {
     width: 70px;
     height: 45px;
+  }
+
+  .top-header, .footer, .services-wrapper, .about, .first-section {
+    visibility: hidden;
   }
 }
 
