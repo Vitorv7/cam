@@ -11,3 +11,27 @@ thumbnails.forEach(thumb => {
     thumb.classList.add('active')
   })
 })
+
+window.sr = ScrollReveal({ reset: true })
+
+ScrollReveal().reveal('.top-header', {
+  duration: 2000,
+  rotate: { x: 0, y: 50, z: 0 }
+})
+
+ScrollReveal().reveal('.footer', {
+  duration: 2000,
+  rotate: { x: 0, y: 0, z: 0 }
+})
+
+ScrollReveal().reveal('.services-wrapper', {
+  duration: 2000
+})
+
+ScrollReveal().reveal('.about', {
+  duration: 2000
+})
+
+ScrollReveal().reveal('.first-section', {
+  duration: 2000
+})

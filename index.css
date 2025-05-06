@@ -336,3 +336,9 @@ body {
     height: 45px;
   }
 }
+
+
+
+.top-header, .footer, .services-wrapper, .about, .first-section {
+  visibility: hidden;
+}
