@@ -21,18 +21,18 @@ ScrollReveal().reveal('.top-header', {
 })
 
 ScrollReveal().reveal('.footer', {
-  duration: 2000,
+  duration: 1000,
   rotate: { x: 0, y: 0, z: 0 }
 })
 
 ScrollReveal().reveal('.services-wrapper', {
-  duration: 2000
+  duration: 1000
 })
 
 ScrollReveal().reveal('.about', {
-  duration: 2000
+  duration: 1000
 })
 
 ScrollReveal().reveal('.first-section', {
-  duration: 2000
+  duration: 1000
 })
