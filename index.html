@@ -12,35 +12,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <!-- SCROLLREVEAL -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
   <body>
-
-        <!-- Imagem de fundo -->
-        <!-- <div class="bg_home">
-          <img src="assets/img/bg-home.jpg" alt="Imagem de fundo" />
-        </div> -->
-    <!-- Header -->
+    <!-- Cabeçalho -->
     <header class="top-header">
       <div class="imgs-header">
-        <a href="" target="_blank">
+        <a href="#" target="_blank">
           <img
-            class="img-header-insta"
             src="assets/img/icons8-instagram (1).svg"
             alt="Instagram"
+            class="img-header-insta"
           />
         </a>
-        <a href="" target="_blank">
+        <a href="#" target="_blank">
           <img
-            class="img-header-face"
             src="assets/img/icons8-facebook.svg"
             alt="Facebook"
+            class="img-header-face"
           />
         </a>
       </div>
@@ -50,83 +42,112 @@
       </div>
     </header>
 
-    <!-- Section 1 -->
-    <section class="first-section">
-      <div class="title-section">
-        <h2>
-          Garanta a proteção da sua casa ou comércio com a instalação
-          profissional de câmeras que oferecem tecnologia de ponta,
-          monitoramento em tempo real e a tranquilidade que você precisa no dia
-          a dia.
-        </h2>
-      </div>
-
-      <div class="button-section">
-        <a
-          href="https://wa.me/5511962048384?text=Olá, poderia me enviar um orçamento para instalação de câmeras, por favor?"
-          target="_blank"
-        >
-          Faça o seu orçamento
-        </a>
-      </div>
-    </section>
-
-    <!-- Sobre -->
-    <section class="about">
-      <div class="img-about">
-        <img src="assets/img/logo-bm.png" alt="Logo da empresa" />
-      </div>
-      <div class="text-about">
-        <h2>Sobre</h2>
-        <p>
-          Instalação profissional de sistemas de monitoramento por câmeras, com
-          equipamentos de alta resolução, configuração personalizada e suporte
-          especializado para comércios e residências. Segurança eficiente com
-          tecnologia de última geração.
-        </p>
-      </div>
-    </section>
-
-    <!-- Linha divisória -->
-    <div class="line"></div>
-
-    <!-- Serviços -->
-    <section class="services-wrapper">
-      <div class="services-title">
-        <h2>Serviços</h2>
-        <h3>
-          Câmeras instaladas, configuradas e <br />
-          funcionando perfeitamente — serviço completo para sua tranquilidade.
-        </h3>
-      </div>
-
-
-      <section class="carousel-container">
-        <div class="main-image">
-          <img id="current-image" src="assets/img/img_cam1.jpg" alt="Imagem Principal">
+    <!-- Seção Principal -->
+    <main>
+      <section class="first-section">
+        <div class="title-section">
+          <h2>
+            Garanta a proteção da sua casa ou comércio com a instalação
+            profissional de câmeras que oferecem tecnologia de ponta,
+            monitoramento em tempo real e a tranquilidade que você precisa no
+            dia a dia.
+          </h2>
         </div>
-        <div class="thumbnails">
-          <img src="assets/img/img_cam1.jpg" alt="Thumb 1" class="thumb active">
-          <img src="assets/img/img_cam2.jpg" alt="Thumb 2" class="thumb">
-          <img src="assets/img/img_cam3.jpg" alt="Thumb 3" class="thumb">
-          <img src="assets/img/img_6.jpg" alt="Thumb 4" class="thumb">
-          <img src="assets/img/img_cam4.jpg" alt="Thumb 5" class="thumb">
+
+        <div class="button-section">
+          <a
+            href="https://wa.me/5511962048384?text=Olá, poderia me enviar um orçamento para instalação de câmeras, por favor?"
+            target="_blank"
+          >
+            Faça o seu orçamento
+          </a>
         </div>
       </section>
 
+      <!-- Sobre -->
+      <section class="about">
+        <div class="img-about">
+          <img src="assets/img/logo-bm.png" alt="Logo da empresa" />
+        </div>
+
+        <div class="text-about">
+          <h2>Sobre</h2>
+          <p>
+            Instalação profissional de sistemas de monitoramento por câmeras,
+            com equipamentos de alta resolução, configuração personalizada e
+            suporte especializado para comércios e residências. Segurança
+            eficiente com tecnologia de última geração.
+          </p>
+        </div>
+      </section>
+
+      <!-- Divisória -->
+      <hr class="line" />
+
+      <!-- Serviços -->
+      <section class="services-wrapper">
+        <div class="services-title">
+          <h2>Serviços</h2>
+          <h3>
+            Câmeras instaladas, configuradas e <br />
+            funcionando perfeitamente — serviço completo para sua tranquilidade.
+          </h3>
+        </div>
+
+        <!-- Carrossel de Imagens -->
+        <div class="carousel-container">
+          <div class="main-image">
+            <img
+              id="current-image"
+              src="assets/img/img_cam1.jpg"
+              alt="Imagem Principal"
+            />
+          </div>
+
+          <div class="thumbnails">
+            <img
+              src="assets/img/img_cam1.jpg"
+              alt="Thumb 1"
+              class="thumb active"
+            />
+            <img src="assets/img/img_cam2.jpg" alt="Thumb 2" class="thumb" />
+            <img src="assets/img/img_cam3.jpg" alt="Thumb 3" class="thumb" />
+            <img src="assets/img/img_6.jpg" alt="Thumb 4" class="thumb" />
+            <img src="assets/img/img_cam4.jpg" alt="Thumb 5" class="thumb" />
+          </div>
+        </div>
+      </section>
+    </main>
+
     <!-- Rodapé -->
     <footer class="footer">
-        <img class="img-contact" src="assets/img/logo-bm.png" alt="Logo da empresa" />
-          <div class="contact-info">
-            <h4>Contact</h4>
-            <div class="contact-info-icons">
-              <a class="link-icone" href="https://wa.me/5511962048384?text=Olá, poderia me enviar um orçamento para instalação de câmeras, por favor?" target="_blank">
-                <img class="icone-img" src="assets/img/icone-phone.png" alt="">
-                <p>5511962048384</p>
-              </a>
-            </div>
-          </div>
+      <img
+        class="img-contact"
+        src="assets/img/logo-bm.png"
+        alt="Logo da empresa"
+      />
+
+      <div class="contact-info">
+        <h4>Contato</h4>
+        <div class="contact-info-icons">
+          <a
+            class="link-icone"
+            href="https://wa.me/5511962048384?text=Olá, poderia me enviar um orçamento para instalação de câmeras, por favor?"
+            target="_blank"
+          >
+            <img
+              class="icone-img"
+              src="assets/img/phone-solid.svg"
+              alt="Ícone Telefone"
+            />
+            <p>5511962048384</p>
+          </a>
+        </div>
+      </div>
     </footer>
+
+    <!-- ScrollReveal & JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>
 </html>

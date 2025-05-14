@@ -1,4 +1,4 @@
-/* RESET E CONFIGURAÇÕES GERAIS */
+/* ========== RESET E CONFIGURAÇÕES GERAIS ========== */
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +10,11 @@
 body {
   overflow-x: hidden;
   background-color: #06121E;
-  font-family: "Kufam", sans-serif;
-  color: #FFFFFF;
+  font-family: var(--font-family);
+  color: var(--color-text-main);
 }
 
-/* VARIÁVEIS */
+/* ========== VARIÁVEIS ========== */
 :root {
   --font-family: "Kufam", sans-serif;
   --color-text-main: #FFFFFF;
@@ -22,7 +22,7 @@ body {
   --color-text-tertiary: #000000;
 }
 
-/* ================= HEADER ================= */
+/* ========== HEADER ========== */
 .top-header {
   display: flex;
   justify-content: space-around;
@@ -31,7 +31,7 @@ body {
   height: 64px;
   padding: 10px;
   margin-bottom: 50px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--color-text-main);
 }
 
 .title-header h1 {
@@ -59,11 +59,10 @@ body {
 
 .img-header-insta:hover,
 .img-header-face:hover {
-  transform: translateY(-5px);
-  scale: 1.1;
+  transform: translateY(-5px) scale(1.1);
 }
 
-/* ================= SEÇÃO PRINCIPAL ================= */
+/* ========== SEÇÃO PRINCIPAL ========== */
 .first-section {
   display: flex;
   flex-direction: column;
@@ -76,12 +75,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   margin: 50px;
   font-size: 25px;
   font-weight: 400;
-  font-family: var(--font-family);
   color: var(--color-text-main);
+  font-family: var(--font-family);
 }
 
 .button-section {
@@ -89,13 +87,12 @@ body {
 }
 
 .button-section:hover {
-  transform: translateY(-5px);
-  scale: 1.05;
+  transform: translateY(-5px) scale(1.05);
 }
 
 .button-section a {
   color: var(--color-text-main);
-  background-color: #0066FF;
+  background-color: var(--color-text-secundary);
   padding: 20px;
   border: 1px solid var(--color-text-main);
   border-radius: 5px;
@@ -104,15 +101,13 @@ body {
   font-family: var(--font-family);
 }
 
-/* ================= SOBRE ================= */
+/* ========== SOBRE ========== */
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 80px;
   border-top: 2px solid var(--color-text-main);
-
-  margin: 80px;
 }
 
 .img-about img {
@@ -120,10 +115,9 @@ body {
   height: auto;
   margin-top: 40px;
   border-radius: 10px;
+  border: 1px solid var(--color-text-main);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-
-  border: 1px solid var(--color-text-main);
 }
 
 .img-about img:hover {
@@ -142,17 +136,15 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 150%;
-  font-family: var(--font-family);
 }
 
 .text-about p {
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
-  font-family: var(--font-family);
 }
 
-/* ================= SERVIÇOS ================= */
+/* ========== SERVIÇOS ========== */
 .line {
   border-top: 2px solid var(--color-text-main);
 }
@@ -174,47 +166,17 @@ body {
 .services-title h2 {
   font-size: 30px;
   font-weight: 400;
-  font-family: var(--font-family);
 }
 
 .services-title h3 {
   font-weight: 400;
-  font-family: var(--font-family);
 }
 
-
-/* ================= BACKGROUND ================= */
-/* .bg_home {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.bg_home img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.bg_home::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  width: inherit;
-  height: inherit;
-  opacity: 0.5;
-  background: linear-gradient(-233deg, #000 100%, rgba(0, 0, 0, 0) 65%);
-} */
-
-/* CARROUSEL */
+/* ========== CARROSSEL ========== */
 .carousel-container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   text-align: center;
-
-  margin-bottom: 30px;
 }
 
 .main-image img {
@@ -231,8 +193,8 @@ body {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .thumbnails .thumb {
@@ -245,67 +207,59 @@ body {
   transition: opacity 0.3s, transform 0.3s;
 }
 
-.thumbnails .thumb:hover {
+.thumbnails .thumb:hover,
+.thumbnails .thumb.active {
   opacity: 1;
   transform: scale(1.05);
-}
-
-.thumbnails .thumb.active {
   border: 2px solid #007bff;
-  opacity: 1;
 }
 
-/* RESPONSIVIDADE */
-@media screen and (max-width: 769px){
-.line{
-  border-top: none;
-}
-
-.top-header {
-  border: none;
-  position: relative;
+/* ========== RESPONSIVO ========== */
+@media screen and (max-width: 769px) {
+  .line,
+  .about {
+    border-top: none;
   }
 
-.title-section h2 {
-  font-size: 18px;
-  width: 18rem;
+  .top-header {
+    border: none;
+    position: relative;
+  }
+
+  .title-section h2 {
+    font-size: 18px;
+    width: 18rem;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-about img {
+    width: 80%;
+    margin: -25px 0 2rem 9%;
+  }
+
+  .text-about p {
+    font-size: 20px;
+    width: 140%;
+  }
+
+  /* Oculta animações (ScrollReveal) */
+  .top-header,
+  .footer,
+  .services-wrapper,
+  .about,
+  .first-section {
+    visibility: hidden;
+  }
 }
 
-.about{
-  border-top: none;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-about img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin-left: 9%;
-  margin-top: -25px;
-  margin-bottom: 2rem;
-}
-
-.text-about p{
-  font-size: 20px;
-  width: 140%;
-}
-
-/* scrollreveal mobile */
-.top-header, .footer, .services-wrapper, .about, .first-section {
-  visibility: hidden;
-}
-
-}
-
-@media (max-width: 600px){
-  .main-image img{
-    max-width: 60%; /* ocupa quase toda a largura da tela */
+@media (max-width: 600px) {
+  .main-image img {
+    max-width: 60%;
   }
 
   .thumbnails {
@@ -318,58 +272,44 @@ body {
     height: 45px;
   }
 
-  /* Scrollreveal mobile */
-  .top-header, .footer, .services-wrapper, .about, .first-section {
+  .top-header,
+  .footer,
+  .services-wrapper,
+  .about,
+  .first-section {
     visibility: hidden;
   }
 }
 
-
-/* Scrollreveal desktop */
-.top-header, .footer, .services-wrapper, .about, .first-section {
-  visibility: hidden;
-}
-
-/* ================= CONTATO E RODAPÉ ================= */
+/* ========== CONTATO E RODAPÉ ========== */
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  /* background-color: #06121E; */
   padding: 25px;
+  background-color: white;
   border-top: 2px solid var(--color-text-main);
 }
 
-.img-contact{
+.img-contact {
   width: 200px;
   height: 194px;
   border-radius: 10px;
-
   border: 1px solid var(--color-text-main);
 }
 
-.contact-info{
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   margin-top: 5rem;
 }
 
-.contact-info h4{
+.contact-info h4 {
   text-transform: uppercase;
-
+  border-bottom: 1px solid var(--color-text-main);
   transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid var(--color-text-main);  
 }
-
-.contact-info{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
