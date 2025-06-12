@@ -1,38 +1,58 @@
-const currentImage = document.getElementById('current-image')
-const thumbnails = document.querySelectorAll('.thumb')
+window.addEventListener('DOMContentLoaded', () => {
+  const currentImage = document.getElementById('current-image')
+  const thumbnails = document.querySelectorAll('.thumb')
 
-thumbnails.forEach(thumb => {
-  thumb.addEventListener('click', () => {
-    // Troca imagem principal
-    currentImage.src = thumb.src
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      // Troca imagem principal
+      currentImage.src = thumb.src
 
-    // Atualiza a miniatura ativa
-    thumbnails.forEach(t => t.classList.remove('active'))
-    thumb.classList.add('active')
+      // Atualiza a miniatura ativa
+      thumbnails.forEach(t => t.classList.remove('active'))
+      thumb.classList.add('active')
+    })
+  })
+
+  // ScrollReveal
+  window.sr = ScrollReveal({ reset: true })
+
+  ScrollReveal().reveal('.top-header', {
+    duration: 2000,
+    rotate: { x: 0, y: 50, z: 0 }
+  })
+
+  ScrollReveal().reveal('.footer', {
+    duration: 1000,
+    rotate: { x: 0, y: 0, z: 0 }
+  })
+
+  ScrollReveal().reveal('.services-wrapper', {
+    duration: 1000
+  })
+
+  ScrollReveal().reveal('.about', {
+    duration: 1000
+  })
+
+  ScrollReveal().reveal('.first-section', {
+    duration: 1000
   })
 })
 
-// ScrollReveal
-window.sr = ScrollReveal({ reset: true })
+let currentSlide = 0
 
-ScrollReveal().reveal('.top-header', {
-  duration: 2000,
-  rotate: { x: 0, y: 50, z: 0 }
-})
+function moveSlide(direction) {
+  const carousel = document.querySelector('.carousel')
+  const cards = document.querySelectorAll('.card')
+  const totalSlides = cards.length
 
-ScrollReveal().reveal('.footer', {
-  duration: 1000,
-  rotate: { x: 0, y: 0, z: 0 }
-})
+  currentSlide += direction
 
-ScrollReveal().reveal('.services-wrapper', {
-  duration: 1000
-})
+  if (currentSlide < 0) {
+    currentSlide = totalSlides - 1
+  } else if (currentSlide >= totalSlides) {
+    currentSlide = 0
+  }
 
-ScrollReveal().reveal('.about', {
-  duration: 1000
-})
-
-ScrollReveal().reveal('.first-section', {
-  duration: 1000
-})
+  carousel.style.transform = `translateX(-${600 * currentSlide}px)`
+}

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -15,27 +14,31 @@
       href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-bm.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
     <!-- Cabeçalho -->
     <header class="top-header">
-      <div class="imgs-header">
-        <a href="#" target="_blank">
-          <img
-            src="assets/img/icons8-instagram (1).svg"
-            alt="Instagram"
-            class="img-header-insta"
-          />
+      <div class="img-icon">
+        <a href="https://facebook.com" target="_blank">
+          <img src="assets/img/icons8-facebook.svg" alt="Facebook" />
         </a>
-        <a href="#" target="_blank">
-          <img
-            src="assets/img/icons8-facebook.svg"
-            alt="Facebook"
-            class="img-header-face"
-          />
+        <a href="https://instagram.com" target="_blank">
+          <img src="assets/img/icons8-instagram (1).svg" alt="Instagram" />
         </a>
       </div>
+
+      <ul class="header-list">
+        <li><a href="">Menu</a></li>
+        <li><a href="#text-about">Sobre</a></li>
+        <li><a href="#services-title">Serviços</a></li>
+      </ul>
 
       <div class="title-header">
         <h1>BM</h1>
@@ -45,22 +48,89 @@
     <!-- Seção Principal -->
     <main>
       <section class="first-section">
-        <div class="title-section">
-          <h2>
-            Garanta a proteção da sua casa ou comércio com a instalação
-            profissional de câmeras que oferecem tecnologia de ponta,
-            monitoramento em tempo real e a tranquilidade que você precisa no
-            dia a dia.
-          </h2>
+        <div class="block">
+          <h1>Por que investir em câmeras de segurança?</h1>
+          <p>
+            Em um mundo cada vez mais conectado e dinâmico, garantir a segurança
+            da sua casa ou do seu comércio deixou de ser um luxo e se tornou uma
+            necessidade. As câmeras de segurança evoluíram muito — e hoje
+            oferecem mais do que apenas imagens: elas entregam monitoramento em
+            tempo real, alertas inteligentes, gravação em nuvem e acesso remoto
+            pelo celular.
+          </p>
         </div>
 
-        <div class="button-section">
-          <a
-            href="https://wa.me/5511962048384?text=Olá, poderia me enviar um orçamento para instalação de câmeras, por favor?"
-            target="_blank"
-          >
-            Faça o seu orçamento
-          </a>
+        <!-- <div class="cards">
+          <div class="card-1">
+            <h3>Prevenção é sempre o melhor investimento</h3>
+            <p>
+              Estudos mostram que locais com câmeras de vigilância têm menor
+              índice de furtos e invasões. A simples presença das câmeras já
+              serve como um fator de dissuasão. Ou seja: só de estarem visíveis,
+              já reduzem os riscos.
+            </p>
+          </div>
+
+          <div class="card-2">
+            <h3>Tranquilidade 24 horas por dia</h3>
+            <p>
+              Com as tecnologias atuais, você pode monitorar sua casa ou empresa
+              de qualquer lugar do mundo, direto pelo seu celular. Basta ter
+              internet e pronto — você vê tudo ao vivo, recebe alertas e pode
+              até falar com quem estiver no local, dependendo do modelo da
+              câmera.
+            </p>
+          </div>
+
+          <div class="card-3">
+            <h3>Baixo custo, alto retorno</h3>
+            <p>
+              Ao contrário do que muita gente pensa, hoje em dia é possível
+              instalar um sistema de câmeras completo com excelente
+              custo-benefício, graças à evolução dos equipamentos. Além disso,
+              uma instalação profissional evita retrabalho, falhas ou pontos
+              cegos.
+            </p>
+          </div>
+        </div> -->
+
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="card">
+              <h3>Prevenção é sempre o melhor investimento</h3>
+              <p>
+                Estudos mostram que locais com câmeras de vigilância têm menor
+                índice de furtos e invasões. A simples presença das câmeras já
+                serve como um fator de dissuasão. Ou seja: só de estarem
+                visíveis, já reduzem os riscos.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Tranquilidade 24 horas por dia</h3>
+              <p>
+                Com as tecnologias atuais, você pode monitorar sua casa ou
+                empresa de qualquer lugar do mundo, direto pelo seu celular.
+                Basta ter internet e pronto — você vê tudo ao vivo, recebe
+                alertas e pode até falar com quem estiver no local, dependendo
+                do modelo da câmera.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Baixo custo, alto retorno</h3>
+              <p>
+                Ao contrário do que muita gente pensa, hoje em dia é possível
+                instalar um sistema de câmeras completo com excelente
+                custo-benefício, graças à evolução dos equipamentos. Além disso,
+                uma instalação profissional evita retrabalho, falhas ou pontos
+                cegos.
+              </p>
+            </div>
+          </div>
+
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
       </section>
 
@@ -70,7 +140,7 @@
           <!-- <img src="assets/img/logo-bm.png" alt="Logo da empresa" /> -->
         </div>
 
-        <div class="text-about">
+        <div id="text-about">
           <h2>Sobre</h2>
           <p>
             Instalação profissional de sistemas de monitoramento por câmeras,
@@ -86,7 +156,7 @@
 
       <!-- Serviços -->
       <section class="services-wrapper">
-        <div class="services-title">
+        <div id="services-title">
           <h2>Serviços</h2>
           <h3>
             Câmeras instaladas, configuradas e <br />
