@@ -99,6 +99,7 @@ body {
   padding: 15px 0 50px;
 
   border-radius: 5px;
+  border: 2px solid white;
 }
 
 .block{
@@ -240,15 +241,12 @@ button.next {
   right: 5px;
 }
 
-
-
-
 /* ========== SOBRE ========== */
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 80px;
+  margin: 70px;
   border-top: 2px solid var(--color-text-main);
 }
 
@@ -272,7 +270,7 @@ button.next {
   align-items: center;
   text-align: center;
   gap: 20px;
-  margin: 5px;
+  margin: 50px;
 }
 
 .text-about h2 {
